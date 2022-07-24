@@ -11,7 +11,7 @@ public class BankingApp {
         do {
             System.out.println("Wybierz co chcesz zrobić: \n 1. Informacje o koncie \n 2. Wpłata gotówki \n 3. Wypłata gotówki \n 4. Wyjście");
             znak = scanner.nextInt();
-            switch (znak){
+            switch (znak) {
                 case 1:
                     account.showAccount();
                     break;
@@ -22,7 +22,7 @@ public class BankingApp {
                     account.withdrawal();
                     break;
             }
-        }while (znak != 4);
+        } while (znak != 4);
 
     }
 }
