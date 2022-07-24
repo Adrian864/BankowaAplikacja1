@@ -34,6 +34,10 @@ public class AccountDetails {
         System.out.println("Ile pieniedzy chcesz wyplacic? ");
         long pieniadze;
         pieniadze = scanner.nextLong();
-        balance = balance - pieniadze;
+        if(balance < pieniadze) {
+            System.out.println("Operacja niemożliwa! Niemasz dość pieniedzy na koncie.");
+        }else
+            balance = balance - pieniadze;
+
     }
 }
