@@ -21,5 +21,19 @@ public class AccountDetails {
         System.out.println("Your account name is: "+ name);
         System.out.println("Your account number is: "+ accountNumber);
         System.out.println("Your account balance is: "+ balance);
+        System.out.println("Your login is: "+ login);
+    }
+
+    public void deposit(){
+        System.out.println("Ile pieniędzy ma być wpłacone? ");
+        long pieniadze;
+        pieniadze = scanner.nextLong();
+        balance = pieniadze + balance;
+    }
+    public void withdrawal(){
+        System.out.println("Ile pieniedzy chcesz wyplacic? ");
+        long pieniadze;
+        pieniadze = scanner.nextLong();
+        balance = balance - pieniadze;
     }
 }
